@@ -548,8 +548,9 @@ def run_iris():
               [0, 0, 1, ], [0, 0, 1, ], [0, 0, 1, ], [0, 0, 1, ], [0, 0, 1, ], [0, 0, 1, ], [0, 0, 1, ],
               [0, 0, 1, ], [0, 0, 1, ], [0, 0, 1, ]]
     data = NNData(Iris_X, Iris_Y, .7)
-    network.train(data, 10001, order=NNData.Order.RANDOM)
-    network.test(data)
+    print(network.__dict__)
+    # network.train(data, 10001, order=NNData.Order.RANDOM)
+    # network.test(data)
 
 
 def run_sin():
@@ -616,6 +617,6 @@ def run_sin():
 
 
 if __name__ == "__main__":
-    # run_iris()
-    run_sin()
+    run_iris()
+    # run_sin()
     # run_XOR()
